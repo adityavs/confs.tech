@@ -131,14 +131,6 @@
     "twitter": "@rossconf"
   },
   {
-    "name": "WeAreDevelopers",
-    "url": "https://www.wearedevelopers.com",
-    "startDate": "2018-05-16",
-    "endDate": "2018-05-18",
-    "city": "Vienna",
-    "country": "Austria"
-  },
-  {
     "name": "Balkan Ruby",
     "url": "http://balkanruby.com",
     "startDate": "2018-05-25",
@@ -220,7 +212,7 @@
     "twitter": "@southeastruby"
   },
   {
-    "name": "Deccan Ruby Conf 2018",
+    "name": "Deccan Ruby Conf",
     "url": "http://www.deccanrubyconf.org",
     "startDate": "2018-08-04",
     "endDate": "2018-08-04",
@@ -229,5 +221,27 @@
     "twitter": "@deccanrubyconf",
     "cfpUrl": "https://www.papercall.io/drc18",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "RubyConf MY",
+    "url": "http://rubyconf.my",
+    "startDate": "2018-10-25",
+    "endDate": "2018-10-26",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "twitter": null,
+    "cfpUrl": "http://rubyconf.my/call-for-proposals/",
+    "cfpEndDate": "2018-07-15"
+  },
+  {
+    "name": "Madison+ Ruby: Chicago",
+    "url": "https://ti.to/adorable/madison-ruby-chicago/en",
+    "startDate": "2018-05-10",
+    "endDate": "2018-05-11",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "twitter": "@MadisonRuby",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]

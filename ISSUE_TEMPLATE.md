@@ -11,6 +11,11 @@ Where should it go?
 - [ ] Dev Ops
 - [ ] Data
 - [ ] Tech-comm
+- [ ] Rust
+- [ ] Golang
+- [ ] Python
+- [ ] Elixir
+- [ ] Scala
 - [ ] General
 
 ```json

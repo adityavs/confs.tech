@@ -9,7 +9,13 @@ export const TOPICS = {
   android: 'Android',
   data: 'Data / AI',
   php: 'PHP',
+  elixir: 'Elixir',
+  rust: 'Rust',
+  python: 'Python',
+  golang: 'Golang',
   devops: 'Dev Ops',
   'tech-comm': 'Technical communication',
   general: 'General',
+  security: 'Security',
+  scala: 'Scala',
 };

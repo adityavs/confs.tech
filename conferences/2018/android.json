@@ -1,5 +1,36 @@
 [
   {
+    "name": "Conference for Kotliners",
+    "url": "https://www.conferenceforkotliners.com",
+    "city": "Budapest",
+    "country": "Hungary",
+    "startDate": "2018-06-15",
+    "endDate": "2018-06-15",
+    "cfpEndDate": "2018-05-13",
+    "cfpUrl": "https://www.papercall.io/conference-for-kotliners",
+    "twitter": "@kotliners"
+  },
+  {
+    "name": "Mobile Fest",
+    "url": "http://mobilefest.com.ua/indexe.html",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-02",
+    "cfpEndDate": "2018-04-29",
+    "cfpUrl": "http://mobilefest.com.ua/speakers_eng.html"
+  },
+  {
+    "name": "Android Enterprise Summit @ Droidcon",
+    "url": "https://www.de.droidcon.com/enterprise-summit",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "cfpEndDate": "2018-04-30",
+    "cfpUrl": "https://sessionize.com/android-enterprise-summit"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
@@ -88,6 +119,17 @@
     "endDate": "2018-04-17"
   },
   {
+    "name": "Droidcon Italy 2018 - Conference ",
+    "url": "http://it.droidcon.com/2018",
+    "startDate": "2018-04-19",
+    "endDate": "2018-04-20",
+    "city": "Turin",
+    "country": "Italy",
+    "twitter": "@Droidconit",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "Android Makers",
     "url": "https://androidmakers.fr",
     "startDate": "2018-04-23",
@@ -169,6 +211,16 @@
     "twitter": "@addconf"
   },
   {
+    "name": "DroidJam",
+    "url": "https://www.droidjam.in/",
+    "city": "Bangalore",
+    "country": "India",
+    "startDate": "2018-07-13",
+    "endDate": "2018-07-14",
+    "cfpUrl": "https://www.droidjam.in/#call-for-papers",
+    "cfpEndDate": "2018-06-15"
+  },
+  {
     "name": "360|AnDev",
     "url": "https://360andev.com",
     "startDate": "2018-07-19",
@@ -180,11 +232,56 @@
     "twitter": "@360andev"
   },
   {
-    "name": "Kotlin Conf",
+    "name": "droidconNYC",
+    "url": "http://droidcon.nyc",
+    "city": "New York",
+    "country": "U.S.A.",
+    "startDate": "2018-08-27",
+    "endDate": "2018-08-28",
+    "cfpUrl": "https://sessionize.com/droidcon-nyc-2018",
+    "cfpEndDate": "2018-06-10",
+    "twitter": "@DroidconNYC"
+  },
+  {
+    "name": "KotlinConf",
     "url": "https://kotlinconf.com",
     "city": "Amsterdam",
     "country": "Netherlands",
     "startDate": "2018-10-03",
-    "endDate": "2018-10-05"
+    "endDate": "2018-10-05",
+    "twitter": "@kotlinconf"
+  },
+  {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Oslo",
+    "country": "Norway",
+    "twitter": "@mobileeraconf",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
+    "cfpEndDate": "2018-05-17"
+  },
+  {
+    "name": "AppsConf",
+    "url": "http://appsconf.ru/2018",
+    "startDate": "2018-10-08",
+    "endDate": "2018-10-09",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "",
+    "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
+    "cfpEndDate": "2018-08-03"
+  },
+  {
+    "name": "GDG DevFest Ukraine",
+    "url": "https://devfest.gdg.org.ua",
+    "startDate": "2018-10-12",
+    "endDate": "2018-10-13",
+    "city": "Lviv",
+    "country": "Ukraine",
+    "twitter": "@devfest_ukraine",
+    "cfpUrl": "https://sessionize.com/dfua",
+    "cfpEndDate": "2018-07-01"
   }
 ]

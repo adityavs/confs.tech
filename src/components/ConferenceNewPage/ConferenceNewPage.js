@@ -25,8 +25,9 @@ const defaultConference = {
   endDate: null,
   topic: 'javascript',
   cfpUrl: '',
-  cfpEndDate: '',
+  cfpEndDate: null,
   twitter: '@',
+  comment: '',
 };
 
 export default class ConferenceNewPage extends Component {
@@ -54,6 +55,7 @@ export default class ConferenceNewPage extends Component {
   resetForm = () => {
     this.setState({
       submitted: false,
+      submitting: false,
       conference: defaultConference,
     });
   };
@@ -123,7 +125,7 @@ export default class ConferenceNewPage extends Component {
     if (cannotBeSubmitted) { return; }
     this.setState({submitting: true});
 
-    fetch(`${process.env.API_END_POINT_DOMAIN}/conferences`, {
+    fetch(`${process.env.API_END_POINT_DOMAIN}/api/conferences`, {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -169,7 +171,12 @@ export default class ConferenceNewPage extends Component {
           Thank you for submitting a conference!
         </p>
         <p>
-          We`ll revise soon and add it to the list.
+          {"We'll revise soon and add it to the list."}
+          <br />
+          You can also{' '}
+          <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+            view the request on Guthub
+          </Link>
         </p>
         <p>
           <Link external url="https://github.com/tech-conferences/confs.tech/">
@@ -202,8 +209,10 @@ export default class ConferenceNewPage extends Component {
         country,
         cfpUrl,
         twitter,
+        comment,
         startDate,
         endDate,
+        cfpEndDate,
       },
     } = this.state;
     return (
@@ -225,7 +234,7 @@ export default class ConferenceNewPage extends Component {
           </InputGroup>
           <InputGroup>
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Conference name</label>
               <input
                 className={classNames(
                   this.hasError('name') && styles.error
@@ -330,7 +339,7 @@ export default class ConferenceNewPage extends Component {
                 <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="cfpEndDate"
-                  selected={this.state.cfpEndDate}
+                  selected={cfpEndDate}
                   onChange={this.handleDateChange.cfpEndDate}
                 />
               </div>
@@ -348,6 +357,15 @@ export default class ConferenceNewPage extends Component {
               onChange={this.handleFieldChange}
             />
             {this.errorFor('twitter', 'Twitter handle is required.')}
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="comment">Additional comments / infos – <i>will only appear on github</i></label>
+            <textarea
+              type="text"
+              name="comment"
+              value={comment}
+              onChange={this.handleFieldChange}
+            />
           </InputGroup>
           <Recaptcha
             sitekey="6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs"
@@ -406,6 +424,14 @@ export default class ConferenceNewPage extends Component {
           <script src="https://www.google.com/recaptcha/api.js" async defer />
         </Helmet>
         <Heading element="h1">Add a new conference</Heading>
+        {!submitted &&
+          <p>
+            Submitting a conference will create a{' '}
+            <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+              pull requests on GitHub
+            </Link> that will be reviewed by our team as soon as possible!
+          </p>
+        }
         {submitted ? this.submitted() : this.form()}
       </div>
     );
